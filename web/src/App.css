@@ -1,0 +1,25 @@
+/* * {
+  outline: 1px dotted rgba(0, 0, 0, .3);
+} */
+
+.customer-form {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hover {
+  transition: .25s;
+}
+.hover:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 5px #666;
+  transition: .25s;
+}
+
+/* .customer-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+} */

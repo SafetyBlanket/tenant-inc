@@ -1,0 +1,32 @@
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "tenant",
+  "password": "tenant123"
+}
+
+###
+GET http://localhost:3000/customers
+
+###
+GET http://localhost:3000/customers/4
+
+###
+POST http://localhost:3000/customers
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDk3MTE1Njh9.3OQuaVQuwdtJW6GBrsou4PuNU-u41adnAnfar0oPCkQ
+
+{
+  "first_name": "john",
+  "last_name": "doe",
+  "email_address": "test@test.com",
+  "phone_number": "(123)456-78910"
+}
+
+###
+DELETE http://localhost:3000/customers/11
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDk3MTE1Njh9.3OQuaVQuwdtJW6GBrsou4PuNU-u41adnAnfar0oPCkQ
+
